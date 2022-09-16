@@ -20,10 +20,7 @@ const SUB_LIST_ITEMS = [
 
 const MenuItem = (item) => {
   return (
-    <li
-      key={item.id}
-      className="flex items-center p-2 font-semibold text-slate-600 hover:bg-slate-200 rounded cursor-pointer"
-    >
+    <li className="flex items-center p-2 font-semibold text-slate-600 hover:bg-slate-200 rounded cursor-pointer">
       {item.icon}
       <span className="pl-4">{item.name}</span>
     </li>
@@ -41,7 +38,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="bg-slate-100 h-[calc(100vh-58px)] w-64 border-r p-4">
+    <div className="bg-slate-100 h-full w-64 border-r p-4">
       <div className="py-2 flex mb-3">
         <img
           src="https://picsum.photos/50/50"
