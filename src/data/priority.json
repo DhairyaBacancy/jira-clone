@@ -1,0 +1,27 @@
+[
+  {
+    "id": "Highest",
+    "name": "highest",
+    "color": "#ccc"
+  },
+  {
+    "id": "high",
+    "name": "High",
+    "color": "#ccc"
+  },
+  {
+    "id": "medium",
+    "name": "Medium",
+    "color": "#ccc"
+  },
+  {
+    "id": "low",
+    "name": "Low",
+    "color": "#ccc"
+  },
+  {
+    "id": "lowest",
+    "name": "Lowest",
+    "color": "#ccc"
+  }
+]

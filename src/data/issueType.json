@@ -1,0 +1,14 @@
+[
+  {
+    "id": "task",
+    "name": "Task"
+  },
+  {
+    "id": "improvement",
+    "name": "Improvement"
+  },
+  {
+    "id": "bug",
+    "name": "Bug"
+  }
+]

@@ -1,27 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Layout from './layout';
+import ErrorBoundary from './component/ErrorBoundary';
+import KanbanLayout from './layout/KanbanLayout';
+const Dashboard = React.lazy(() => import('./pages/Dashboard'));
+const ProjectDetail = React.lazy(() => import('./pages/ProjectDetail'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <BrowserRouter>
+        <ErrorBoundary>
+          <Layout>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Routes>
+                <Route index path="/" element={<Dashboard />} />
+                <Route element={<KanbanLayout />}>
+                  <Route path="/project/:slug" element={<ProjectDetail />} />
+                </Route>
+              </Routes>
+            </Suspense>
+          </Layout>
+        </ErrorBoundary>
+      </BrowserRouter>
     </div>
   );
 }

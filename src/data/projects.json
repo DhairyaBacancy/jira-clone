@@ -1,0 +1,35 @@
+[
+  {
+    "id": "pr1",
+    "name": "Project-1",
+    "description": "Project description",
+    "key": "pr1",
+    "type": "Demo",
+    "lead": "User1",
+    "action": {
+      "redirectLink": "/project/pr1"
+    }
+  },
+  {
+    "id": "pr2",
+    "name": "Project-2",
+    "description": "Project description",
+    "key": "pr2",
+    "type": "Demo",
+    "lead": "User2",
+    "action": {
+      "redirectLink": "/project/pr2"
+    }
+  },
+  {
+    "id": "pr3",
+    "name": "Project-3",
+    "description": "Project description",
+    "key": "pr3",
+    "type": "Demo",
+    "lead": "User3",
+    "action": {
+      "redirectLink": "/project/pr3"
+    }
+  }
+]
